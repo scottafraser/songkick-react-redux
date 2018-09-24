@@ -30,6 +30,7 @@ componentDidMount() {
           <li key={item.id}>
           {item.displayName}
           <br></br>
+            <a href={item.performance[0].artist.uri}>Go to site</a>
           <button onClick={() => this.props.removeItem(index)}>Remove</button>
           </li>
         ))}
